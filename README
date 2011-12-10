@@ -1,0 +1,3 @@
+simple api for racktables using post to modify attibute and ip bindings
+
+simply copy the api directory into your racktables directory. This requires XML_Serializer.
