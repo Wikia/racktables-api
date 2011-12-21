@@ -1,11 +1,20 @@
 <?php 
 include("XML/Serializer.php");
 require_once "XML/Unserializer.php";
-include ('../inc/init.php');
+try 
+{
+   include ('../inc/init.php');
+} 
+catch ( Exception $e ) 
+{
+   general_error();
+}
+
 function general_error () {
 
    header('HTTP/1.1 400');
    echo "error\n";
+   exit;
 
 }
 
